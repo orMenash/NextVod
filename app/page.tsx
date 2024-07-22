@@ -1,7 +1,6 @@
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <div> New app page</div>
+    <div className="text-danger"> New app page</div>
   );
 }
