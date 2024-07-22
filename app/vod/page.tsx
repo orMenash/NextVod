@@ -1,8 +1,13 @@
 import React from 'react'
+import HeaderVod from './compnents/headerVod'
+import VodList from './compnents/vodList'
 
-function Vod() {
+function Vod(props:any) {
   return (
-    <div>Vod project</div>
+    <React.Fragment>
+        <HeaderVod/>
+        <VodList {...props}/>
+    </React.Fragment>
   )
 }
 
