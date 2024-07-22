@@ -4,7 +4,8 @@ import VodItem from './vodItem';
 import BackBtn from './backBtn';
 
 export default async function VodList(props: any) {
-
+    console.log(API_KEY);
+    
     const searchQ = props.searchParams?.s || 'man'
     const url = `http://www.omdbapi.com/?s=${searchQ}&apikey=${API_KEY}`;
     const resp = await fetch(url);
