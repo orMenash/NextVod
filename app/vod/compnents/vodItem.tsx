@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function VodItem(props:any) {
@@ -8,7 +9,7 @@ export default function VodItem(props:any) {
             <img src={item.Poster} className='float-start me-2 w-25' alt="" />
             <h4>{item.Title}</h4>
             <div>Year: {item.Year}</div>
-            <a href="#" className='btn btn-dark mt-3'>More info</a>
+            <Link href={`/vod/info/${item.imdbID}`} className='btn btn-dark mt-3'>More info</Link>
         </div>
     )
 }
