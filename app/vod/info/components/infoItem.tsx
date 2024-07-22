@@ -1,6 +1,7 @@
 import { API_KEY } from '@/app/data/secret';
+import BackBtn from '../../compnents/backBtn';
 import React from 'react'
-import InfoBtn from './backBtn';
+
 
 export default async function InfoItem(props: any) {
     const id = props.params.id
@@ -17,7 +18,7 @@ export default async function InfoItem(props: any) {
             <div>Rating: {data.imdbRating}</div>
             <div>Genere: {data.Gener}</div>
             <p>Plot: {data.Plot}</p>
-            <InfoBtn />
+            <BackBtn />
         </div>
     )
 }

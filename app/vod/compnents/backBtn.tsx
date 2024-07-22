@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation'
 import React from 'react'
 
-export default function InfoBtn() {
+export default function BackBtn() {
     const router = useRouter()
 
     const goBack = () => {

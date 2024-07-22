@@ -10,7 +10,6 @@ export default function Home() {
       <Suspense key={Date.now()} fallback={<Loading />}>
         <Vod />
       </Suspense>
-
     </React.Fragment>
   );
 }
