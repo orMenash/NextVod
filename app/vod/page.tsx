@@ -6,7 +6,6 @@ import Loading from './loading'
 function Vod(props: any) {
     return (
         <React.Fragment>
-            <HeaderVod />
             <Suspense key={Date.now()} fallback={<Loading />}>
                 <VodList {...props} />
             </Suspense>

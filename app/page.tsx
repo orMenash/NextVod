@@ -1,15 +1,9 @@
-import React, { Suspense } from "react";
-import Vod from "./vod/page";
-import Loading from "./vod/loading";
-import HeaderVod from "./vod/compnents/headerVod";
+"use client"
 
 
 export default function Home() {
+  window.location.href = '/vod'
   return (
-    <React.Fragment>
-      <Suspense key={Date.now()} fallback={<Loading />}>
-        <Vod />
-      </Suspense>
-    </React.Fragment>
+    <div></div>
   );
 }
