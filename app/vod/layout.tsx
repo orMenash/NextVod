@@ -14,7 +14,6 @@ export default function VodLayout({
 }>) {
   return (
     <React.Fragment>
-        <HeaderVod/>
         {children}
     </React.Fragment>
   );

@@ -1,8 +1,13 @@
-"use client"
+// "use client"
+
+import React from "react";
+import Vod from "./vod/page";
 
 
 export default function Home() {
   return (
-    <div>Next V.O.D Project</div>
+    <React.Fragment>
+      <Vod/>
+    </React.Fragment>
   );
 }
