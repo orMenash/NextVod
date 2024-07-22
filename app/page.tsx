@@ -2,8 +2,7 @@
 
 
 export default function Home() {
-  window.location.href = '/vod'
   return (
-    <div></div>
+    <div>Next V.O.D Project</div>
   );
 }
